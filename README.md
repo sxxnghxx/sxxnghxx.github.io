@@ -1,2 +1,1 @@
-# sxxnghxx.github.io
-FastCampus, FrontEnd Developer Course
+# [sxxnghxx's project for web](http://sxxnghxx.github.io)      
