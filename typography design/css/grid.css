@@ -1,0 +1,41 @@
+html {
+    background: #fff;
+}
+
+body {
+    margin: 0;
+    padding-top: 42px;
+    height: 200vh;
+    background: url("../assets/leading-pattern-21.png");
+    font-family: "NanumSquare", "Dotum", sans-serif;
+    font-size: 14px;
+    color: #262626;
+    letter-spacing: -0.02em;
+    /* 포토샵 설정 값 기준: -20 <- 1000으로 나눈 후, em 단위를 붙인다.*/
+    line-height: 1.5;
+    /*속기형 속성 : 글꼴, 글자 크기, 글자 두께, 글자 기울기, 글자 변형, 행간*/
+    /* font: 글자크기 글꼴; (필수!!) */
+    /* font: 14px "NanumSquare", "Dotum", sans-serif; */
+    /* font: 글자크기/행간 글꼴; (옵션) */
+    font: 14px/1.5 "NanumSquare", "Dotum", sans-serif;
+    /* font: 두께 기울기 변형 글자크기/행간 글꼴; (옵션)*/
+    /* font: bold italic small-caps 14px/1.5 "NanumSquare", "Dotum", sans-serif; */
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 21px;
+}
+
+
+/* 컨테이너 디자인 */
+
+.container {
+    /* 너비 */
+    width: 960px;
+    /* 최대너비 */
+    max-width: 780px;
+    /* 가운데 배치(Layout): 남은 공간을 양분*/
+    margin-left: auto;
+    margin-right: auto;
+}
