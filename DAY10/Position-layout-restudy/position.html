@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 포지셔닝 테크닉; z-index</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            margin: 5rem;
+        }
+
+        .box {
+            padding: 1rem;
+            border: 1px solid #aaa
+        }
+
+        .parent {
+            background: #bcbcbc;
+        }
+
+        .child {
+            width: 14rem;
+            height: 14rem;
+            color: rgba(255, 255, 255, 8.7);
+            font-weight: 700;
+            font-size: 1.7rem;
+        }
+
+        .one {
+            background-color: hsl(115, 65%, 70%)
+        }
+
+        .two {
+            /*text-shadow: x y blur spread color;*/
+            text-shadow: 0 0 0.5rem hsl(167, 65%, 42%);
+            background-color: hsl(167, 65%, 42%);
+        }
+
+        .three {
+            background-color: hsl(535, 65%, 70%)
+        }
+
+        .parent.is-2nd{
+            z-index: 1;
+            top: 20px;
+            left: 165px;
+            width: 50%;
+            background: rgba(0,0,0,0.6);
+        }
+
+        is-2nd{
+            z-index: 110;
+            
+        }
+
+
+
+
+        /*
+        정리하면 부모가 다른 자식들 간의 z-index 경쟁은 아무 소용 없다.
+        부모의 z-index가 높아야 자식의 z-index 영향도 반영된다.
+        */
+
+    </style>
+</head>
+
+<body>
+    <div class="box parent">
+        <!--.box.child.one+.box.child.two+.box.child.three-->
+        <div class="box child one">one</div>
+        <div class="box child two">two</div>
+        <div class="box child three">three</div>
+    </div>
+    <div class="box parent">
+        <!--.box.child.one+.box.child.two+.box.child.three-->
+        <div class="box child one">one</div>
+        <div class="box child two">two</div>
+        <div class="box child three">three</div>
+
+    </div>
+</body>
+
+</html>

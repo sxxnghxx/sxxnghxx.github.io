@@ -1,0 +1,60 @@
+.Baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.is-italic {
+    font-style: italic;
+}
+
+.montserrat {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.is-bold {
+    font-weight: 700;
+}
+
+.grace-ui.banner{
+    width: 580px;
+    height: 215px;
+    /*background:bg-color(transparent) url() repeat left top scroll*/
+    background: #fff url("../image/people.png") no-repeat 88px 9px;
+    /*border: 1px solid #cdcdcd;*/
+    box-shadow:0 0 4px rgba(0,0,0,0.2);
+    /*둥근테두리*/
+    border-radius:10px;
+}
+
+.is-centerXY{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -107.5px;
+    margin-left:-290px;
+}
+
+.banner-category{
+    font-size: 12px;ㅇ
+	letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.banner-headline{
+    color: #dba68f;
+    font-size:36px;
+    line-height: 1.1111;
+}
+
+.banner-review-link{
+    padding: 1em 1.5em 1.0714em;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    color: #fff;
+    background: #000;
+    border-radius: 20px;
+
+}
