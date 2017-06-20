@@ -35,20 +35,54 @@
 }
 
 .banner-category{
+    position:absolute;
+    top: 95px;
+    left: 19px;
     font-size: 12px;ㅇ
-	letter-spacing: 0.6px;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 
 .banner-headline{
+    position:absolute;
+    top: -8px;
+    right: 62px;
     color: #dba68f;
     font-size:36px;
     line-height: 1.1111;
 }
 
-.banner-review-link{
-    padding: 1em 1.5em 1.0714em;
 
+
+.banner-review{
+/*위치*/position:absolute;top: 183px;left: 373px;}
+
+.banner-review * {
+    padding-left: 24px;
+    font-size: 13px;
+
+
+}
+
+/*개별디자인*/
+
+.banner-review .review-view{
+background: url("../image/icon-view.svg") no-repeat 0 50%;
+}
+.banner-review .review-comments{
+background: url("../image/icon-comments.png") no-repeat 0 50%;
+
+}
+
+
+
+
+
+.banner-review-link{
+    position:absolute;
+    top: 122px;
+    right: 49px;
+    padding: 0.8em 1.2em 1.07em;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -56,5 +90,4 @@
     color: #fff;
     background: #000;
     border-radius: 20px;
-
 }
