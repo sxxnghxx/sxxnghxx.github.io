@@ -1,3 +1,13 @@
+
+/*사용자가 선택한 블록을 스타일 함으로써
+디자이너가 톡앤매너를 지키고자 할 경우 스타일 가능*/
+
+::selection{
+background: #dba68f;
+color:#fff;
+}
+
+
 .Baskerville {
     font-family: 'Libre Baskerville', serif;
 }
@@ -38,7 +48,7 @@
     position:absolute;
     top: 95px;
     left: 19px;
-    font-size: 12px;ㅇ
+    font-size: 12px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
 }
