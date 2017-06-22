@@ -1,0 +1,44 @@
+html {
+    background: #fff;
+}
+
+.vignette {
+    position: fixed;
+    /*width: 100vw;
+height: 100vh;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:radial-gradient(circle, rebeccapurple, palevioletred);
+}
+
+.album {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 287px;
+    height: 287px;
+    transform: translate(-50%,-50%);
+
+}
+
+.album .album-item{
+    top: 0;
+    right: 0;
+    transition: all is ease-out;
+}
+
+.album:hover .album-item.sleeve{
+    top: -5px;
+    right: -25px;
+}
+
+
+.album:hover .album-item.disk{
+    top: -5px;
+    right: -80px;
+}
+
+
+

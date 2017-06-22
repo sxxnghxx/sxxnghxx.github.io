@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: #333;
+}
+
+.poster.wall-e {
+    width: 1000px;
+    height: 1000px;
+    /*배경 이미지를 배치(layout)*/
+    /*대다수의 이미지는 콘텐츠 이미지로 떡칠을 한다, 근데 때로는 백그라운드 배경이미지로 해결할 필요가 있다. 그래야 코드를 잘 짜는 것*/
+    /*배경 이미지에 해당되는 것을 하나씩 쌓아나갈 것이다. */
+    /*배경이미지로 작업하면, 대신 Z index를 수정할 수 없다.*/
+    /*이건 multi background */
+    background: url("../images/disney-pixar.png") no-repeat 362px 88px,     url("../images/logo.png") no-repeat 107px 122px,      url("../images/eve.png") no-repeat 569px 300px,      url("../images/wall-e.png") no-repeat 263px 344px,      url("../images/m-o.png") no-repeat 202px 698px,      url("../images/music.png")no-repeat 150px 930px,
+    /*쌓인 순서가 위일 수록 오브젝트가 상위에 존재(포토샵과 레이어와 유사)*/
+    linear-gradient(180deg, #000 0%, #008 10%,#009 20%, #8030e5 100%)
+}
+
+.poster.is-center-x{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.poster.is-center-y{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.poster.is-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*background: #fff;*/
+    /*변형 (transform)*/
+    /*박스 자신의 가로, 세로 길이의 절반만큼 위치 이동*/
+    transform: translate(-50%, -50%);
+    /*transform: translateX(-50%) translateY(-50%)*/
+}
